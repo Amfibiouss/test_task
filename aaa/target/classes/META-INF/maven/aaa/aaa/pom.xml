@@ -4,4 +4,19 @@
   <artifactId>aaa</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>aaa</name>
+  <build>
+	  <plugins>
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+		    <configuration>
+		      <archive>
+		        <manifest>
+		          <mainClass>aaa.Main</mainClass>
+		        </manifest>
+		      </archive>
+		    </configuration>
+		  </plugin>
+	  </plugins>
+  </build>
 </project>
